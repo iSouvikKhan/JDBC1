@@ -39,8 +39,6 @@ public class Update {
 				if (statement != null)
 				{
 					String updateSqlQuery = String.format("update student set `sname`='%s',`sage`=%d,`saddress`='%s' where `sid`=%d", name, age, address, id);
-//					String updateSqlQuery = "UPDATE student SET sname=\"Virat Kohli\",sage = 36,saddress=\"Noida\" WHERE sid= 18";
-//					String.format("insert into student(`sname`,`sage`,`saddress`) values ('%s',%d,'%s')", sname, sage, saddress);
 					int noOfRows = statement.executeUpdate(updateSqlQuery);
 					System.out.println("No of rows updated is :: " + noOfRows);
 				}
